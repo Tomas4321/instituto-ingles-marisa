@@ -72,10 +72,14 @@
 
 .contacto-mapa {
     width: 90%;
-    height: 180px;
+    height: 400px; /* más alto para el mapa interactivo */
     position: relative;
-    margin-bottom: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1; /* para que el mapa quede sobre el fondo */
 }
+
 
 .contacto-mapa img {
     width: 100%;
