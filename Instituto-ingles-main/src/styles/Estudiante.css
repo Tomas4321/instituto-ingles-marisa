@@ -1,0 +1,38 @@
+.container-testimonio{
+    background-color: #764AF1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.titulo{
+    justify-content: center;
+}
+
+.carta-recomendacion{
+    display: flex;
+    justify-content: center;
+    width: calc(260px * 10);
+    animation: carrusele 50s linear infinite; /* Aquí agregamos un retraso de 1.2s para que empiece después de la animación de entrada */
+    margin-bottom: 16vh;
+}
+
+@keyframes carrusele {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-260px * 5)); /* Ajuste a 6 elementos si es necesario */
+    }
+}
+
+.span-testimonio{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+}

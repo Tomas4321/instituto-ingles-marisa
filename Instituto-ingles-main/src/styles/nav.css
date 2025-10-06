@@ -1,0 +1,275 @@
+.nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    background-color: #232424;
+
+}
+
+.scrolled {
+    background-color: rgba(35, 36, 36, 0.9);
+    transition: all 0.2s;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    object-fit: cover;
+    width: 50%;
+}
+
+/* Botón de menú hamburguesa */
+.menu-hamburguesa {
+    cursor: pointer;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos del menú */
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    /* En vez de display: none */
+    overflow: hidden;
+    transform: translateX(100%);
+    /* Inicialmente fuera de la pantalla */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cuando el menú está abierto */
+.menu.open {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    /* Hacer visible */
+    transform: translateX(0);
+    /* Mover el menú de vuelta a la posición original */
+}
+
+
+.contenedor-principal.menu-active {
+    background-color: rgba(0, 0, 0, 1); /* Oscurece el fondo */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Lista de navegación */
+.menu li {
+    list-style: none;
+    cursor: pointer;
+    display: block;
+}
+
+/* ... Los demás estilos permanecen igual ... */
+
+.menu li a {
+    display: flex;
+    /* Esto hace que el <a> ocupe todo el espacio dentro del <li> */
+    text-decoration: none;
+    color: #293B97;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    width: fit-content;
+    /* Asegura que el <a> ocupe el 100% del <li> */
+    height: 6vh;
+    /* Asegura que el <a> ocupe el 100% del <li> */
+    align-items: center;
+}
+
+.menu li a:hover {
+    border-bottom: solid 2px red;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.menu p {
+    font-family: Raleway;
+    font-size: 30px;
+    color: #293B97;
+    font-weight: 600;
+    margin: 20px 0;
+    margin-left: 20px;
+}
+
+.menu svg {
+    stroke: #0A175C;
+}
+
+.menu svg path {
+    fill: #0A175C;
+}
+
+.desaparecer {
+    display: none;
+}
+
+.menu button {
+    margin: 20px 0;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    background: #FEBB2F;
+    width: 230px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: #0A175C;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 0;
+}
+
+.menu button:hover {
+    background-color: #55cfdf;
+    scale: 1.05;
+}
+
+.menu button a {
+    text-decoration: none;
+    color: #0A175C;
+    font-size: 12px;
+    margin: 0;
+}
+
+.btn-close-icon {
+    background-color: transparent !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+.menu .separadorMobile {
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.menu img {
+    width: 220px;
+}
+
+/* Para accesibilidad */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* Estilos para mobile*/
+@media screen and (min-width: 360px) {
+    .menu a {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para tableta*/
+@media screen and (min-width: 600px) {
+    .menu a {
+        font-size: 14px;
+    }
+
+}
+
+
+/* Estilos para desktop */
+@media screen and (min-width: 1024px) {
+    .menu-hamburguesa {
+        display: none;
+        /* Ocultar el icono de hamburguesa */
+    }
+
+    .menu {
+        height: 100%;
+        position: static;
+        max-height: none;
+        opacity: 1;
+        background: none;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 60px;
+        width: 70%;
+        visibility: visible;
+        transform: none;
+    }
+
+    .menu svg {
+        display: none;
+    }
+
+    /* Los elementos <a> en el menú */
+    .menu li a {
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        height: 6vh;
+        align-items: center;
+        margin: 0;
+    }
+
+    /* Asegurarte de que el fondo no se modifique en la versión desktop */
+    .menu li {
+        opacity: 1;
+        /* Asegura que los <li> sean visibles */
+    }
+
+    .logo {
+        margin-left: 60px;
+    }
+}

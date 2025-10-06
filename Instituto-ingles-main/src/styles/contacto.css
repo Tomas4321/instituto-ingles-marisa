@@ -1,0 +1,248 @@
+.contacto-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #0A175C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacto-informacion {
+    margin-top: 30px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin-top: 11vh;
+}
+
+.contacto-informacion svg {
+    width: 15px;
+    height: 15px;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+    cursor: default;
+}
+
+.informacion a {
+    width: max-content;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 5px;
+    text-decoration: none;
+    /* 150% */
+}
+
+.contacto-informacion h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.059px;
+    /* 100% */
+    text-transform: uppercase;
+}
+
+.contacto-mapa {
+    width: 90%;
+    height: 180px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contacto-mapa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacto-mapa-informacion {
+    width: 110px;
+    height: 53px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 0.498px 1.991px -0.498px rgba(0, 0, 0, 0.30);
+    border-radius: 0.996px;
+}
+
+.contacto-mapa-informacion img {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.contacto-mapa-informacion h5 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 3px;
+}
+
+.contacto-mapa-informacion h6 {
+    color: #5B5B5B;
+    font-family: Raleway;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 70%;
+    margin: 3px;
+}
+
+.contacto-mapa-informacion p {
+    color: #1A73E8;
+    font-family: Raleway;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 3px;
+}
+
+
+@media (min-width: 768px) {
+
+    .informacion {
+        text-align: center;
+    }
+
+    .contacto-mapa {
+        width: 600px;
+        height: 300px;
+    }
+
+    .contacto-informacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 250px;
+    }
+
+    .informacion {
+        width: 250px;
+    }
+
+    .contacto-informacion h3 {
+        width: 100%;
+    }
+
+
+    .contacto-mapa-informacion {
+        width: 200px;
+        height: 100px;
+    }
+
+    .contacto-mapa-informacion img {
+        right: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .contacto-mapa-informacion h5 {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .contacto-mapa-informacion h6 {
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    .contacto-mapa-informacion p {
+        font-size: 9px;
+        margin: 25px 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .informacion {
+        text-align: center;
+    }
+
+    .contacto-mapa {
+        width: 700px;
+        height: 350px;
+    }
+
+    .contacto-informacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 250px;
+    }
+
+    .informacion {
+        width: 250px;
+    }
+
+    .contacto-informacion h3 {
+        width: 100%;
+    }
+
+
+    .contacto-mapa-informacion {
+        width: 200px;
+        height: 100px;
+    }
+
+    .contacto-mapa-informacion img {
+        right: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .contacto-mapa-informacion h5 {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .contacto-mapa-informacion h6 {
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    .contacto-mapa-informacion p {
+        font-size: 9px;
+        margin: 25px 10px;
+    }
+}

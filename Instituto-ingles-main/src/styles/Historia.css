@@ -1,0 +1,212 @@
+.historia {
+    margin-bottom: 5vh;
+}
+
+.historia h2 {
+    color: #764AF1;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 100% */
+    margin: 5vh 0;
+}
+
+.historia h2 span {
+    color: #764AF1;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+
+.container-1080 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1080 svg {
+    display: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item-conteiner2 .item {
+    flex-direction: row-reverse;
+}
+
+.item-conteiner4 .item {
+    flex-direction: row-reverse;
+}
+
+.linea-año p {
+    color: #764AF1;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 0 5px;
+    /* 100% */
+}
+
+.informacion-item {
+    grid-area: informacion;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -16px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 2px solid #FF5C5C;
+}
+
+.informacion-item h5 {
+    color: #293B97;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 100% */
+}
+
+.informacion-item p {
+    color: #120539;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    /* 120% */
+    width: 90%;
+    text-align: center;
+}
+
+.linea-recta {
+    display: flex !important;
+    width: 30px;
+    height: 40px;
+    transform: rotate(90deg);
+}
+
+.mini-flecha {
+    display: block !important;
+    margin: 5px 0
+}
+
+/* Estilos para tableta*/
+@media screen and (min-width: 767px) {
+    .linea-recta {
+        display: none !important;
+    }
+
+    .mini-flecha {
+        display: none !important;
+    }
+
+    .container-1080 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        ". flecha ."
+        "item1 flecha ."
+        ". flecha item2"
+        "item3 flecha ."
+        ". flecha item4"
+        ". flecha .";
+    }
+
+    .flecha {
+        display: grid !important;
+        grid-area: flecha;
+        height: 600px;
+        width: 60px;
+    }
+
+    .item-conteiner1 .item {
+        flex-direction: row-reverse;
+    }
+    
+    .item-conteiner3 .item {
+        flex-direction: row-reverse;
+    }
+
+    .item-conteiner2 .item {
+        flex-direction: row;
+    }
+    
+    .item-conteiner4 .item {
+        flex-direction: row;
+    }
+
+    .item-conteiner1 .linea-año {
+        flex-direction: row-reverse;
+    }
+    .item-conteiner3 .linea-año {
+        flex-direction: row-reverse;
+    }
+    .item-conteiner1 {
+        grid-area: item1;
+        margin: 0 -30px;
+    }
+    .item-conteiner2 {
+        grid-area: item2;
+        margin: 0 -30px;
+    }
+    .item-conteiner3 {
+        grid-area: item3;
+        margin: 0 -30px;
+    }
+    .item-conteiner4 {
+        grid-area: item4;
+        margin: 0 -30px;
+    }
+
+    .item .linea-año svg {
+        display: flex;
+        width: 40px;
+    }
+
+    .item .linea-año {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+    .linea-año p {
+        font-size: 24px;
+    }
+
+    .informacion-item {
+        width: 300px;
+        height: 130px;
+    }
+    .informacion-item h5 {
+        font-size: 22px;
+    }
+
+    .informacion-item p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+}

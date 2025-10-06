@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Raleway;
+}
+
+.contenedor-principal {
+    width: 100%;
+    overflow: hidden;
+    background-color: #E9F0FF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* h2 {
+    margin-top: 10vh !important;
+} */
+
+.menu-abierto section,
+.menu-abierto footer {
+    position: relative;
+    z-index: -1;
+}
+
+.menu-abierto nav {
+    background-color: black;
+}
+
+.menu-abierto nav .logo {
+    visibility: hidden;
+    transition: background-color 0.3s ease-in-out;
+}

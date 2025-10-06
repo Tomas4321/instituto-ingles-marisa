@@ -1,0 +1,125 @@
+.comentario{
+    width: 250px;
+    background-color: #FFF;
+}
+
+.primera-parte{
+    display: flex;
+    height: 50%;
+}
+/* 
+.container-recomendacion{
+} */
+
+
+
+.container-test{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonio {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 130px;
+    background-color: #FFF; 
+    cursor: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6); /* Sombra sutil */
+    margin: 0 15px;
+}
+
+.testimonio-img-container {
+    flex-direction: column;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.testimonio img {
+    padding: 0px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.testimonio-informacion-container {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.testimonio-informacion-container div p{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: 1px;
+    border-top: 1px solid #212529; /* Bordes para crear la línea */
+    margin: 5px auto; /* Centra la línea con espacio alrededor */
+    opacity: 0.25;
+}
+
+.testimonio-informacion-container p {
+    color: #616161;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.estrellas-testimonio {
+    padding-top: 4px;
+}
+
+h4 {
+    color: #181818;
+    font-family: Playfair Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+/* Estilos para tableta*/
+@media screen and (min-width: 600px) {
+    .testimonio {
+        width: 300px;
+        height: 100px;
+    }
+
+    .testimonio-img-container {
+        width: 60px;
+    }
+    
+    .testimonio img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonio-informacion-container {
+        width: 250px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    .testimonio-informacion-container p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .estrella-svg {
+        width: 20px;
+        height: 19px;
+    }
+
+}

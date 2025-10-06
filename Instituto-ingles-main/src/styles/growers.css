@@ -1,0 +1,218 @@
+/* ===============================
+   ESTILOS BASE - MOBILE FIRST
+   =============================== */
+.growers-section {
+    max-width: 100% !important;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.growers-section-home-container {
+    width: 100%;
+    height: auto;
+}
+
+.growers-section-home {
+    margin-top: 10vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.growers-informacion {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.informacion-growers-clases {
+    width: 85%;
+    height: 70px;
+}
+
+.informacion-growers-clases p{
+    color: #6B6B6B;
+    font-family: Raleway;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-style: normal;
+    text-align: center;
+}
+
+.growers-informacion button {
+    background: #764AF1;
+    width: 230px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.growers-informacion button:hover{
+    background-color: #293B97;
+    scale: 1.05;
+}
+
+.growers-informacion button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.growers-imagen {
+    margin: 25px 0;
+    width: 90%;
+    height: 230px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.growers-imagen img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+}
+
+.titulo-growers {
+    color: #1E1926;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.titulo-growers span {
+    color: #FF0000;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+/* ===============================
+   MEDIA QUERIES - MOBILE FIRST
+   =============================== */
+
+/* Celular (≥ 360px) */
+@media (min-width: 360px) {
+    .titulo-growers {
+        font-size: 30px;
+    }
+
+
+    .growers-informacion button {
+        width: 250px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .growers-imagen {
+        height: 350px;
+    }
+
+}
+
+/* Tablets pequeñas (≥ 600px) */
+@media (min-width: 767px) {
+    .growers-section-home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .growers-imagen {
+        height: 450px;
+        margin-top: 4vh;
+    }
+
+    .growers-informacion {
+        margin-top: 5vh;
+        width: 70%;
+    }
+
+    .titulo-growers {
+        font-size: 50px;
+    }
+
+    .informacion-growers-clases p{
+        font-size: clamp(1.2rem, 1vw, 1.2rem);
+    }
+
+    .growers-informacion button {
+        width: 320px;
+        height: 60px;
+        font-size: 18px;
+        margin-top: 3vh;
+    }
+
+}
+
+
+@media (min-width: 799px) {
+    
+    .growers-imagen {
+        height: 550px;
+        margin-top: 4vh;
+    }
+
+    .informacion-growers-clases p{
+        font-size: clamp(1.2rem, 1vw, 1.2rem);
+    }
+
+}
+
+/* Laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+    .growers-section-home {
+        flex-direction: row;
+        height: 85vh;
+        justify-content: center;
+    }
+
+    .growers-informacion {
+        width: 40%;
+        align-items: start;
+        margin: 0 30px;
+    }
+
+    .titulo-growers {
+        text-align: start;
+        font-size: 38px;
+        width: 550px;
+    }
+
+    .informacion-growers-clases{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .informacion-growers-clases p{
+        font-size: clamp(1.2rem, 1vw, 1.2rem);
+        text-align: start;
+    }
+
+    .growers-imagen {
+        margin: 0 20px;
+        width: auto;
+        height: 450px;
+    }
+
+
+    .growers-testimonios {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
+
+/* Monitores grandes (≥ 1440px) */
+@media (min-width: 1440px) {}

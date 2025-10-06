@@ -1,0 +1,162 @@
+.equipo-container{
+    background-color: #764AF1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop{
+    display: none;
+}
+
+.container-general {
+    width: 90%;
+    max-width: 1080px;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}
+
+.growers-mobile {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    cursor: auto;
+}
+
+.growers-mobile-alrevez {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.profes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.titulo-profe h3{
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-titulo{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.info-profe{
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.foto-profe{
+    width: 105.884px;
+    height: 106.41px;
+    flex-shrink: 0;
+    border-radius: 65.075px 65.075px 0px 65.075px;
+    object-fit: cover;
+}
+
+.texto-profe{
+    color: #D5EAFF;
+    font-size: 13px;
+    margin: 0
+}
+
+
+@media (min-width: 767px) {
+    .equipo-tablet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .growers-mobile-alrevez {
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .growers-mobile {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        cursor: auto;
+    }
+    
+    .titulo-profe{
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-profe {
+        width: 180px;
+    }
+    .texto-profe{
+        font-size: 16px;
+    }
+
+    .foto-profe{
+        width: 120.884px;
+        height: 122.41px;
+    }
+    
+    .profes {
+        margin: 10px 30px;
+    }
+    .container-general {
+        margin-bottom: 10vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profes {
+        margin: 25px 50px;
+    }
+
+    .foto-profe{
+        width: 130.884px;
+        height: 132.41px;
+    }
+
+    .info-profe {
+        width: 250px;
+    }
+}
