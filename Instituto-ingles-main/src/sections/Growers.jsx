@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/growers.css"
 import GrowersDesktop from '../components/GrowersDesktop'
-import imagenBackUp from '../assets/imagenBackUp.webp'
+import imagenBackUp from '../assets/test.png'
 import { motion } from "framer-motion";
 
 
