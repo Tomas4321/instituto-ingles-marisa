@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/logo-ingles-letras-blancas-final.webp";
-import logoAzul from "../assets/logoAzul.webp"
 import "../styles/nav.css";
 import MenuIcon from "../components/MenuIcon";
 import CloseIcon from "../components/CloseIcon";
@@ -60,9 +59,8 @@ const Nav = () => {
                 <li><a href="#servicios" onClick={() => setMenuOpen(false)}>SERVICIOS</a></li>
                 <li><a href="#preguntas" onClick={() => setMenuOpen(false)}>PREGUNTAS FRECUENTES</a></li>
                 <li><a href="#contacto" onClick={() => setMenuOpen(false)}>CONTACTO</a></li>
-                <button className={`${menuOpen ? "" : "desaparecer"}`}> <a href="https://api.whatsapp.com/send/?phone=2494630209&text&type=phone_number&app_absent=0" target='_blank'>Cupos limitados ¡Anotate hoy! </a></button>
+                <button className={`${menuOpen ? "" : "desaparecer"}`}> <a href="https://api.whatsapp.com/send/?phone=2494675012&text&type=phone_number&app_absent=0" target='_blank'>Cupos limitados ¡Anotate hoy! </a></button>
                 <SeparadorMobile className={`${menuOpen ? "" : "desaparecer"}`} />
-                <img className={`${menuOpen ? "" : "desaparecer"}`} src={logoAzul} alt="Logo" />
                 <button className="btn-close-icon" onClick={() => {
                     setMenuOpen(!menuOpen);
                 }}>

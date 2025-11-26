@@ -4,7 +4,7 @@ import '../styles/footer.css'
 const Footer = () => {
   return (
     <footer className='footer-container'>
-        <p>Copyright 2025 © eGrowers – By <span> Mateo Mauro </span> </p>
+        <p>Copyright 2025 © BACK UP – By <span> Tomas Donati </span> </p>
     </footer>
   )
 }

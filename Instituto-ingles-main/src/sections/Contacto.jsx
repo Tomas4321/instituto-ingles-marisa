@@ -79,8 +79,8 @@ const Contacto = () => {
         />
         <InformacionContacto
           svg="✉️"
-          informacion="egrowersschool@gmail.com"
-          direccion="mailto:egrowersschool@gmail.com"
+          informacion="tomasdonati8@gmail.com"
+          direccion="mailto:tomasdonati8@gmail.com"
         />
         <InformacionContacto svg="📞" informacion="2494 675012" />
         <InformacionContacto

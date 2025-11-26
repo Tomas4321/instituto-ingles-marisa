@@ -1,10 +1,10 @@
 import React from 'react'
 import "../styles/Equipo.css"
 import GrowersDesktopAlrevez from '../components/GrowersDesktopAlrevez'
-import profe1 from '../assets/chico1.webp'
-import profe2 from '../assets/chico2.webp'
-import profe3 from '../assets/chica1.webp'
-import profe4 from '../assets/chica2.webp'
+import profe1 from '../assets/Marisa.jpeg'
+import profe2 from '../assets/Simon.jpeg'
+import profe3 from '../assets/Uriel.jpeg'
+import profe4 from '../assets/Tomas.jpeg'
 import InfoProfes from '../components/InfoProfes';
 import GrowersDesktop from '../components/GrowersDesktop'
 
