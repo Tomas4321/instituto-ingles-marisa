@@ -3,7 +3,7 @@ import "../styles/Equipo.css"
 import GrowersDesktopAlrevez from '../components/GrowersDesktopAlrevez'
 import profe1 from '../assets/Marisa.jpeg'
 import profe2 from '../assets/Simon.jpeg'
-import profe3 from '../assets/Uriel.jpg'
+import profe3 from '../assets/Uriel.jpeg'
 import profe4 from '../assets/Tomas.jpeg'
 import InfoProfes from '../components/InfoProfes';
 import GrowersDesktop from '../components/GrowersDesktop'
@@ -23,7 +23,7 @@ const Equipo = () => {
                 </div>
                 <div className='equipo-tablet'>
                     <InfoProfes nombre="Uriel" img={profe3} info="Hola soy marisa tengo 40 años, vivo en Tandil, soy profesora de ingles, estamos dando clases en back up"> </InfoProfes>
-                    <InfoProfes nombre="Kevin" img={profe4} info="Hola soy marisa tengo 40 años, vivo en Tandil, soy profesora de ingles, estamos dando clases en back up"> </InfoProfes>
+                    <InfoProfes nombre="Tomas" img={profe4} info="Hola soy marisa tengo 40 años, vivo en Tandil, soy profesora de ingles, estamos dando clases en back up"> </InfoProfes>
                 </div>
             </div>
         </section>
