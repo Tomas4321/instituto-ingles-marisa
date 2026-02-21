@@ -7,10 +7,10 @@ const Preguntas = () => {
 
     const preguntasRespuestas = [
         { pregunta: "¿Necesito conocimientos previos para inscribirme?", respuesta: "No, no es necesario. Contamos con cursos para todos los niveles, desde principiantes hasta avanzados. Antes de empezar, podemos realizar una prueba de nivelación para ubicarte en el curso adecuado." },
-        { pregunta: "¿Cuáles son los métodos de pago?", respuesta: "Aceptamos tarjetas de crédito, débito, transferencia bancaria y PayPal." },
-        { pregunta: "¿Puedo obtener un certificado al finalizar?", respuesta: "Sí, al completar el curso recibirás un certificado digital avalado por nuestra academia." },
-        { pregunta: "¿Cuánto duran los cursos?", respuesta: "La duración varía según el curso, pero en promedio son entre 4 y 12 semanas." },
-        { pregunta: "¿Las clases son en vivo o grabadas?", respuesta: "Ofrecemos ambas modalidades: clases en vivo con profesores y material grabado disponible 24/7." }
+        { pregunta: "¿Cuáles son los métodos de pago?", respuesta: "Métodos de pago: transferencia o pago de contado. Descuentos por grupo familiar" },
+        { pregunta: "¿Puedo obtener un certificado al finalizar?", respuesta: "Se obtienen certificados de validez internacionales en los exámentes KET, PET, FIRST y IELTS." },
+        { pregunta: "¿Cuánto duran los cursos?", respuesta: "La duración estará determinada por el logro y necesidades del alumno, pudiendo acceder a cursos de perfeccionamiento fonético o conversación." },
+        { pregunta: "¿Las clases son en vivo o grabadas?", respuesta: "Se puede optar por clases presenciales o virtuales." }
     ];
 
     const togglePregunta = (index) => {

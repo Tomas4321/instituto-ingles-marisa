@@ -43,7 +43,7 @@ const Contacto = () => {
         onmouseover="this.style.transform='scale(1.03)'"
         onmouseout="this.style.transform='scale(1)'"
       >
-        <strong style="color:#7A1C2E;">Instituto de Inglés BACK UP</strong><br>
+        <strong style="color:#7A1C2E;">E-Growers School</strong><br>
         Hipólito Yrigoyen 1332<br>
         <span style="font-size:12px; color:#555;">Entre Garibaldi y Alem</span>
       </div>
@@ -75,12 +75,12 @@ const Contacto = () => {
         <h3>Información</h3>
         <InformacionContacto
           svg="📍"
-          informacion="Yrigoyen 1332, Tandil, Buenos Aires"
+          informacion="Yrigoyen 1332, Tandil, BA"
         />
         <InformacionContacto
           svg="✉️"
-          informacion="tomasdonati8@gmail.com"
-          direccion="mailto:tomasdonati8@gmail.com"
+          informacion="marisaaguilarh@gmail.com"
+          direccion="mailto:marisaaguilarh@gmail.com"
         />
         <InformacionContacto svg="📞" informacion="2494 675012" />
         <InformacionContacto
@@ -90,8 +90,8 @@ const Contacto = () => {
         />
         <InformacionContacto
           svg="📸"
-          informacion="Back-Up"
-          direccion="https://www.instagram.com/01.back_up/"
+          informacion="egrowers_school"
+          direccion="https://www.instagram.com/egrowers_school/"
         />
       </div>
 
