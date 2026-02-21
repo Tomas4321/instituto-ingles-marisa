@@ -43,7 +43,7 @@ const Contacto = () => {
         onmouseover="this.style.transform='scale(1.03)'"
         onmouseout="this.style.transform='scale(1)'"
       >
-        <strong style="color:#7A1C2E;">E-Growers School</strong><br>
+        <strong style="color:#7A1C2E;">BACK-UP</strong><br>
         Hipólito Yrigoyen 1332<br>
         <span style="font-size:12px; color:#555;">Entre Garibaldi y Alem</span>
       </div>
@@ -90,8 +90,8 @@ const Contacto = () => {
         />
         <InformacionContacto
           svg="📸"
-          informacion="egrowers_school"
-          direccion="https://www.instagram.com/egrowers_school/"
+          informacion="01.back_up"
+          direccion="https://www.instagram.com/01.back_up?igsh=ZW53ZGp0NzRhcmcx"
         />
       </div>
 
